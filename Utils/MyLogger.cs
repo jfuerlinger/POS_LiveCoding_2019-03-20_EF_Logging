@@ -12,7 +12,7 @@ namespace Utils
 
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
-                .WriteTo.Console()
+                //.WriteTo.Console()
                 .WriteTo.File("Serilog.log")
                 .WriteTo.Observers(events =>
                     events
